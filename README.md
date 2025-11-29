@@ -129,7 +129,7 @@ Kasparro Agentic FB Analyst/
 ### 1️⃣ Clone the repository
 ```bash
 git clone https://github.com/neelurimani/kassparo-agentic-fb-analyst-lokamanikanta-neeluri
-cd kasparro-agentic-fb-analyst-manikanta-neeluri
+cd kasparro-agentic-fb-analyst-lokamanikanta-neeluri
 ```
 
 ### 2️⃣ Install dependencies
