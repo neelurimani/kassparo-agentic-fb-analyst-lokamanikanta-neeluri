@@ -54,7 +54,6 @@ Creates a marketing-friendly, executive-level summary.
 
 ## 🔧 High-Level Architecture Diagram
 
-```mermaid
 flowchart TD
 
 A[run.py] --> B[Planner Agent]
@@ -62,14 +61,14 @@ B --> C[Data Agent]
 C --> D[Insight Agent]
 D --> E[Evaluator Agent]
 E --> F[Creative Generator Agent]
-F --> G[CTR Simulator (ML Model)]
+F --> G[CTR Simulator]
 G --> H[PDF Report Generator]
 H --> I[Enterprise Tier Analytics]
 
 I --> I1[Breakpoint Detection]
 I --> I2[Causal Engine]
 I --> I3[Creative Clustering]
-```
+
 
 ---
 
