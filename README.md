@@ -128,7 +128,7 @@ Kasparro Agentic FB Analyst/
 
 ### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/<your-username>/kasparro-agentic-fb-analyst-manikanta-neeluri.git
+git clone https://github.com/neelurimani/kassparo-agentic-fb-analyst-lokamanikanta-neeluri/tree/main
 cd kasparro-agentic-fb-analyst-manikanta-neeluri
 ```
 
@@ -250,27 +250,6 @@ Run all tests:
 ```bash
 pytest tests/
 ```
-
----
-
-# 🛑 Assignment Requirements Covered
-
-✔ insights.json  
-✔ creatives.json  
-✔ PDF report  
-✔ Enterprise analytics  
-✔ Logs + Memory  
-✔ 3+ commits + tagged release  
-✔ Clean modular structure  
-✔ Fully runnable CLI pipeline  
-
----
-
-# 👨‍💻 Author
-
-**Manikanta Neeluri**  
-Applied AI Engineer – Kasparro Assignment  
-India 🇮🇳  
 
 ---
 
