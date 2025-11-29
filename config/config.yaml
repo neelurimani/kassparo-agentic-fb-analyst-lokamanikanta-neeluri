@@ -1,0 +1,33 @@
+seed: 42
+
+data:
+  path: data/facebook_ads.csv
+  sample_mode: false
+  sample_rows: 2000
+
+thresholds:
+  low_ctr: 0.01        # CTR < 1% -> low performing
+  roas_drop_pct: 0.15  # 15% relative drop triggers "issue"
+  min_impressions: 1000
+
+stats:
+  significance_alpha: 0.05
+
+logging:
+  level: INFO
+
+output:
+  insights_path: reports/insights.json
+  creatives_path: reports/creatives.json
+  report_path: reports/report.md
+
+simulator:
+  min_train_samples: 40
+  tfidf_max_features: 2000
+  random_seed: 42
+
+memory:
+  path: memory/memory.json
+
+report:
+  pdf_output_dir: reports
