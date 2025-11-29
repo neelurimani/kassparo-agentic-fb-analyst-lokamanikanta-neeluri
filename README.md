@@ -1,46 +1,58 @@
 # 🚀 Kasparro Agentic Facebook Performance Analyst – Enterprise Edition
 
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
+![Status](https://img.shields.io/badge/Status-Production-green)
+![AI](https://img.shields.io/badge/AI-Agentic%20System-orange)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
 A fully autonomous, multi-agent AI system that diagnoses Facebook Ads performance, explains ROAS fluctuations, generates improved creative ideas, simulates CTR uplift using machine learning, and produces a PDF report for marketers.
 
-This project extends the original assignment with a **Tier-3 Enterprise Layer**, including trend breakpoints, causal influence modeling, and creative clustering.
+This project extends the original assignment with a **Tier-3 Enterprise Layer**, including:
+- Trend Breakpoint Detection  
+- Causal Influence Modeling  
+- Creative Message Clustering  
+- Enterprise JSON insights  
 
 ---
 
 # ⭐ Features
 
-### ✔ End-to-end Agentic Workflow
-Planner → Data → Insight → Evaluator → Creative → Simulator → PDF Report → Enterprise Analytics
+### ✔ End-to-End Agentic Workflow  
+Planner → Data → Insight → Evaluator → Creative → Simulator → PDF Report → Enterprise Analytics  
 
-### ✔ ROAS Change Diagnosis
-Automatically identifies why performance is dropping:
-- CTR decline
-- Creative fatigue
-- Bad audience match
-- Spend inefficiency
+### ✔ ROAS Change Diagnosis  
+The system automatically identifies why ROAS is changing:
 
-### ✔ Creative Generator
-Creates **new creative messages** grounded in your dataset.
+- CTR decline  
+- Creative fatigue  
+- Wrong targeting  
+- Underperforming segments  
+- Spend inefficiency  
 
-### ✔ CTR Uplift Simulation
-Predicts how new creatives will perform using:
-- TF-IDF vectorization
-- Linear Regression (CTR prediction)
+### ✔ Creative Generator  
+Creates **new creative messages** using patterns learned from your dataset.
 
-### ✔ PDF Report Generation
-A ready-to-share marketer-friendly summary.
+### ✔ CTR Uplift Simulation  
+Predicts CTR improvement using:
 
-### ✔ Enterprise Analytics
-- Breakpoint detection (trend anomalies)
-- Causal influence estimation
-- Creative clustering (KMeans)
-- JSON-based analytics outputs
+- TF-IDF vectorization  
+- Linear Regression CTR model  
+- Confidence scoring  
+
+### ✔ PDF Report Generation  
+Creates a marketing-friendly, executive-level summary.
+
+### ✔ Enterprise Analytics  
+- Breakpoint detection (CTR & ROAS anomalies)  
+- Causal influence estimation  
+- Creative clustering (KMeans + TF-IDF)  
+- Structured JSON outputs  
 
 ---
 
 # 🧠 System Architecture
 
-## 🔧 High-Level Architecture Diagram (Mermaid)
+## 🔧 High-Level Architecture Diagram
 
 ```mermaid
 flowchart TD
@@ -54,9 +66,9 @@ F --> G[CTR Simulator (ML Model)]
 G --> H[PDF Report Generator]
 H --> I[Enterprise Tier Analytics]
 
-I --> I1(Breakpoint Detection)
-I --> I2(Causal Engine)
-I --> I3(Creative Clustering)
+I --> I1[Breakpoint Detection]
+I --> I2[Causal Engine]
+I --> I3[Creative Clustering]
 ```
 
 ---
@@ -113,21 +125,18 @@ Kasparro Agentic FB Analyst/
 
 # ⚙️ Installation & Setup
 
-### 1️⃣ Clone the Repository
-
+### 1️⃣ Clone the repository
 ```bash
 git clone https://github.com/<your-username>/kasparro-agentic-fb-analyst-manikanta-neeluri.git
 cd kasparro-agentic-fb-analyst-manikanta-neeluri
 ```
 
-### 2️⃣ Install Dependencies
-
+### 2️⃣ Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
 ### 3️⃣ Run the Agentic System
-
 ```bash
 python run.py "Analyze ROAS drop"
 ```
@@ -142,21 +151,22 @@ When you run:
 python run.py "Analyze ROAS drop"
 ```
 
-✔ The Planner creates a plan  
+The system executes:
+
+✔ Planner creates task steps  
 ✔ Data Agent loads & summarizes dataset  
 ✔ Insight Agent generates hypotheses  
-✔ Evaluator creates confidence scores  
-✔ Creative Agent generates improved ads  
-✔ Simulator predicts CTR uplift  
-✔ PDF Report is generated  
-✔ Enterprise analytics are executed
+✔ Evaluator assigns confidence scores  
+✔ Creative Agent generates improved ad messages  
+✔ Simulator predicts CTR uplift for each  
+✔ PDF report is generated  
+✔ Enterprise Tier analytics executed  
 
 ---
 
-# 📊 Example Output
+# 📊 Example Outputs
 
 ### ✔ Simulated Creative Performance
-
 ```
 predicted_ctr: 0.0150
 pct_improvement: +50.11%
@@ -164,13 +174,11 @@ confidence: 0.49
 ```
 
 ### ✔ PDF Saved
-
 ```
 reports/dashboard_run_ab4cfd11.pdf
 ```
 
 ### ✔ Enterprise Outputs
-
 ```
 reports/enterprise/breakpoints_run_ab4cfd11.json
 reports/enterprise/causal_ctr_run_ab4cfd11.json
@@ -182,20 +190,21 @@ reports/enterprise/clusters_run_ab4cfd11.json
 # 🔥 Enterprise Tier Breakdown
 
 ## 📈 Breakpoint Detection
-Finds anomalies in ROAS/CTR trends using rolling z-scores.
+Detects sharp performance shifts (CTR or ROAS).
 
 Example:
 ```
-ROAS drop detected on 2023-06-14 (z = -3.2)
+ROAS drop detected on 2023-06-14 (z = −3.2)
 ```
 
 ---
 
 ## 🧭 Causal Engine
-Estimates directional influence of:
+Estimates directional impact of:
 
 - CTR → ROAS  
 - Spend → ROAS  
+- Impressions → ROAS  
 
 Example:
 ```
@@ -205,26 +214,27 @@ CTR → ROAS causal coefficient = +0.83 (confidence: 0.91)
 ---
 
 ## 🎨 Creative Clustering
-Groups creatives based on TF-IDF message similarity.
+Groups creatives based on similarity and CTR performance.
 
 Example:
 ```
-Cluster 3 = Highest CTR (0.0182)
+Cluster 3 (Top-performing)
 Keywords: cotton, breathable, cooling
+avg_ctr: 0.0182
 ```
 
 ---
 
 # 💾 Memory System
 
-Stores:
+Stores all run data:
 
-- best creatives  
-- training metadata  
-- run outputs  
-- event logs  
+- Generated creatives  
+- Predictions  
+- Training events  
+- Pipeline logs  
 
-Stored here:
+Saved in:
 
 ```
 memory/memory.json
@@ -233,6 +243,8 @@ memory/memory.json
 ---
 
 # 🧪 Testing
+
+Run all tests:
 
 ```bash
 pytest tests/
@@ -246,11 +258,10 @@ pytest tests/
 ✔ creatives.json  
 ✔ PDF report  
 ✔ Enterprise analytics  
-✔ Proper logs  
-✔ 3+ commits + v1.0 release  
-✔ Clean folder structure  
-✔ CLI runnable (`python run.py`)  
-✔ Full agentic pipeline  
+✔ Logs + Memory  
+✔ 3+ commits + tagged release  
+✔ Clean modular structure  
+✔ Fully runnable CLI pipeline  
 
 ---
 
@@ -258,11 +269,10 @@ pytest tests/
 
 **Manikanta Neeluri**  
 Applied AI Engineer – Kasparro Assignment  
-India 🇮🇳
+India 🇮🇳  
 
 ---
 
 # 📜 License
 
 MIT License
-
